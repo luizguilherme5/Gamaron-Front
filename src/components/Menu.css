@@ -1,0 +1,30 @@
+.Menu-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 16px;
+    margin-bottom: 20px;
+}
+
+.Menu-item{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    background-color: transparent;
+}
+
+.Menu-selected{
+    color: #006E30;
+    text-shadow: 2px 0 0 #fff,
+                 -2px 0 0 #fff,
+                 0 2px 0 #fff,
+                 0 -2px 0 #fff,
+                 1px 1px #fff, 
+                 -1px -1px 0 #fff, 
+                 1px -1px 0 #fff, 
+                 -1px 1px 0 #fff;
+    font-size: 18px;
+    font-weight: bolder;
+    border: none;
+    background-color: transparent;
+}

@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  background:  url(https://i.gifer.com/H7uy.gif) no-repeat center center fixed;
+  background-size: cover;
+  height: 102vh;
 }
 
 .App-logo {
@@ -16,6 +19,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  border: none;
 }
 
 .App-link {

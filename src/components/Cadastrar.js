@@ -50,11 +50,7 @@ class Cadastrar extends Component {
 
   render() {
     return (
-      <div className="Login-container">
-        <div className="Login-header">
-            <h3 className="Login-title">Gamaron</h3>
-        </div>
-        
+      <div className="Login-container">        
         <div className="Login-card">
             <div className="Login-input">
                 <label>Usuario:</label>
