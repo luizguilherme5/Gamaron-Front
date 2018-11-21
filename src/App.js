@@ -15,7 +15,7 @@ class App extends Component {
     super(props);
     this.state = {
       scene: 1,
-      isLogged: false
+      isLogged: true
     };
   }
 
@@ -23,19 +23,27 @@ class App extends Component {
     this.setState({ scene: value })
   }
 
+  afterLogin() {
+    return (
+      <div>
+        <div className="Menu-container">
+          <button className={this.state.scene == 3 ? 'Menu-selected' : 'Menu-item'} onClick={() => this.handleClick(3)}>Loja</button>
+          <button className={this.state.scene == 1 ? 'Menu-selected' : 'Menu-item'} onClick={() => this.handleClick(1)}>Quests</button>
+          <button className={this.state.scene == 2 ? 'Menu-selected' : 'Menu-item'} onClick={() => this.handleClick(2)}>Ranking</button>
+        </div>
+        {this.state.scene == 1 ? <Quests /> : null}
+        {this.state.scene == 2 ? <Ranking /> : null}
+        {this.state.scene == 3 ? <Loja /> : null}
+      </div>
+    )
+  }
+
   render() {
     return (
       <Router>
         <div className="App">
           <Header />
-          <div className="Menu-container">
-            <button className={this.state.scene == 3 ? 'Menu-selected' : 'Menu-item'} onClick={() => this.handleClick(3)}>Loja</button>
-            <button className={this.state.scene == 1 ? 'Menu-selected' : 'Menu-item'} onClick={() => this.handleClick(1)}>Quests</button>
-            <button className={this.state.scene == 2 ? 'Menu-selected' : 'Menu-item'} onClick={() => this.handleClick(2)}>Ranking</button>
-          </div>
-          {this.state.scene == 1 ? <Quests /> : null}
-          {this.state.scene == 2 ? <Ranking /> : null}
-          {this.state.scene == 3 ? <Loja /> : null}
+          {this.state.isLogged == true ? this.afterLogin() : null}
           <Route path="/login" component={Login} />
           <Route path='/cadastrar' component={Cadastrar} />
         </div>
