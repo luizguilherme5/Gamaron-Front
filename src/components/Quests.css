@@ -1,8 +1,130 @@
 .Quests-container{
-    background-color: #faf6f6;
-    border: 1px solid #aaa;
-    border-radius: 6px;
-    margin-left: 3%;
-    margin-right: 3%;
-    padding-top: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.big-menu{
+    margin: 0px 40px 40px 40px;
+    transition: left .3s ease-out;
+}
+
+.container-fluid{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.p-2{
+    padding: .5%;
+}
+
+.item{
+    color: #fff;
+    width: 50%;
+    height: 140px;
+    margin: 5px;
+    background-size: 100% 200%;
+    background-position: right;
+    background-repeat: no-repeat;
+    transition: all .5s ease-in-out;
+}
+
+.item-small{
+    color: #fff;
+    width: 25%;
+    height: 140px;
+    margin: 4px;
+    background-size: 100% 200%;
+    background-position: right;
+    background-repeat: no-repeat;
+    transition: all .5s ease-in-out;
+}
+
+.first{
+    background-image: linear-gradient(130deg, rgba(172, 172, 172, .9) 25%, rgba(172, 172, 172, 0.3)),
+                      url(https://cdn-images-1.medium.com/max/2000/1*a_EQ_q5ftX1KOS2MRKoyEg.gif); 
+}
+
+.second{
+    background-image: linear-gradient(130deg, rgba(132, 132, 132, .9) 25%, rgba(255, 255, 255, .7)),
+                      url(http://pixelatorapp.com/img/exm5.png);
+}
+
+.third {
+    background-image: linear-gradient(130deg, rgba(132, 132, 132, 1) 25%, rgba(172, 172, 172, .1)),
+                      url(http://xtremeretro.com/wp-content/uploads/2016/04/The-Terminator-Mindscape-Super-Nntendo-SNES-Arnold-Schwarzenegger-Pixel-Art-Xtreme-Retro.png);
+}
+
+.forth {
+    background-image: linear-gradient(130deg, rgba(132, 132, 132, .9) 25%, rgba(172, 172, 172, .1)),
+                      url(http://media02.hongkiat.com/pixel-art/Medieval_Castle.jpg);
+}
+
+.fifth {
+    background-image: linear-gradient(130deg, rgba(132, 132, 132, .9) 25%, rgba(172, 172, 172, .1)),
+                      url(https://orig00.deviantart.net/bb88/f/2017/138/8/c/pixel_dailies___skeleton_knight_by_yoheywhaddup-db9odyv.png);
+}
+
+.sixth {
+    background-image: linear-gradient(130deg, rgba(132, 132, 132, .9) 25%, rgba(172, 172, 172, .1)),
+                      url(https://thumbs.gfycat.com/HospitableDefensiveDegus-size_restricted.gif);
+}
+
+.seventh {
+    background-image: linear-gradient(130deg, rgba(132, 132, 132, .9) 25%, rgba(172, 172, 172, .1)),
+                      url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtgc5fdZKuXVQvVuRQey-eCuvI8UuRK_kRGpfm41ZqnMw7SMZI);
+  }
+
+.last {
+    background-image: linear-gradient(130deg, rgba(132, 132, 132, .9) 25%, rgba(172, 172, 172, 0.1)),
+                      url(https://orig00.deviantart.net/954c/f/2015/200/f/2/pegasus_no_seiya__pixel_art__by_diegogamer1820-d91xown.png);
+}
+
+.first:hover {
+    transform: scale(1.02);
+    background: rgba(0,0,0,.5);
+}
+
+.second:hover {
+    transform: scale(1.02);
+    background: rgba(0,0,0,.5);
+}
+
+.third:hover {
+    transform: scale(1.02);
+    background: rgba(0,0,0,.5);
+}
+
+.forth:hover {
+    transform: scale(1.02);
+    background: rgba(0,0,0,.5);
+}
+
+.fifth:hover {
+    transform: scale(1.02);
+    background: rgba(0,0,0,.5);
+}
+
+.sixth:hover {
+    transform: scale(1.02);
+    background: rgba(0,0,0,.5);
+}
+
+.seventh:hover {
+    transform: scale(1.02);
+    background: rgba(0,0,0,.5);
+}
+
+.last:hover {
+    transform: scale(1.02);
+    background: rgba(0,0,0,.5);
 }

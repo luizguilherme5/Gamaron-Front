@@ -57,8 +57,6 @@ class Cadastrar extends Component {
                 <input className="input" type='text' value={this.state.nome} name='nome' onChange={this.handleChangeNome}/>
                 <label>Email:</label>
                 <input className="input" type='email' value={this.state.email} name='email' onChange={this.handleChange}/>
-                <label>Matricula:</label>
-                <input className="input" type='text' value={this.state.matricula} name='matricula' onChange={this.handleChangeMatricula}/>
                 <label>Senha:</label>
                 <input className="input" type='password' value={this.state.senha} name='senha' onChange={this.handleChangePassword}/>
                 <label>Confirmar Senha:</label>

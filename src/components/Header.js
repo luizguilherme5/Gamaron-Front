@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import './Header.css';
 import headerimg from '../assets/header-img.png';
+import unblogo from '../assets/unb_logo.png';
 
 class Header extends Component {
 

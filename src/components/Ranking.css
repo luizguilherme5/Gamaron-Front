@@ -5,4 +5,49 @@
     margin-left: 3%;
     margin-right: 3%;
     padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 28px;
+    justify-content: space-between;
+}
+
+.Ranking-list{
+    border: 2px solid #ddd;
+    width: 880px;
+    padding: 10px;
+}
+
+.Ranking-single-card{
+    border: 1px solid #bbb;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 40px;
+    margin-bottom: 10px;
+}
+
+.first{
+    border: 1px solid #ff9999;
+}
+
+.fl{
+    display: flex;
+}
+
+.position{
+    margin-right: 10px;
+}
+
+.Ranking-txt{
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 2px 0 0 #000,
+                 -2px 0 0 #000,
+                 0 2px 0 #000,
+                 0 -2px 0 #000,
+                 1px 1px #000, 
+                 -1px -1px 0 #000, 
+                 1px -1px 0 #000, 
+                 -1px 1px 0 #000;
 }
