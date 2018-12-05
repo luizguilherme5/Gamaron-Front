@@ -13,11 +13,12 @@ class Ranking extends Component {
                     url={led}
                     playStatus={Sound.status.PLAYING}
                     playFromPosition={100 /* in milliseconds */}
-                    volume={100}
+                    volume={50}
                     loop={true}
                 />
                 <div className="Ranking-img">
-                    <img src={throne} width={300} height={500}/>
+                    <h2 className="Ranking-titulo">A briga pelo trono de Gamaron continua</h2>
+                    <img src={throne} width={300} height={420}/>
                 </div>
                 <div className="Ranking-list">
                     <div className="Ranking-single-card first">

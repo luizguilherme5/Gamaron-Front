@@ -1,0 +1,41 @@
+.Perfil-container{
+    background-color: #faf6f6;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-top: 10px;
+    display: flex;
+}
+
+.Perfil-img{
+    border-radius: 10px;
+}
+
+.Perfil-img-quest{
+    border-radius: 10px;
+}
+
+.Perfil-container-quest{
+    width: 30%;
+}
+
+.Perfil-container-info{
+    width: 30%;
+}
+
+.Perfil-timeline{
+    width: 46%;
+}
+
+.flashit{
+    color:#05aa4a;
+	-webkit-animation: flash linear 1s infinite;
+	animation: flash linear 1s infinite;
+}
+
+@keyframes flash {
+	0% { opacity: 1; } 
+	50% { opacity: .1; } 
+	100% { opacity: 1; }
+}
