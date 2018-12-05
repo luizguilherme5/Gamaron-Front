@@ -10,7 +10,7 @@ import Ranking from './components/Ranking';
 import Loja from './components/Loja';
 import Perfil from './components/Perfil';
 import headerimg from './assets/header-img.png';
-import unblogo from './assets/unb_logo.png';
+import unblogo from './assets/unbpixel';
 
 class App extends Component {
   constructor(props) {
@@ -85,11 +85,15 @@ class App extends Component {
               <div className='Header-left'>
                 <img className='Header-img' src={nome ? headerimg : null} width="100" height="100" />
                 <div>
-                  <p className='Header-nome'>{nome}</p>
+                  {nome ? <div><p className='Header-nome'>{nome}</p>
                   <p className='Header-information'>Level: {level}</p>
                   <p className='Header-information'>Moedas: {moedas}</p>
-                  <button disabled={!nome} className='Header-btn-perfil' onClick={() => this.handleClick(4)}>Ver perfil</button>
+                  <button disabled={!nome} className='Header-btn-perfil' onClick={() => this.handleClick(4)}>Ver perfil</button></div> : null}
+                  
                 </div>
+              </div>
+              <div>
+                <img className='Header-img-logo' src={unblogo} width="100" height="100" />
               </div>
               <div className='Header-right'>
                 <button className='Header-btn-sair' onClick={() => this.sair()}>sair</button>
