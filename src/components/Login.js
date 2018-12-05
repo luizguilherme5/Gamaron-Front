@@ -7,7 +7,7 @@ class Login extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            email: '',
+            nome: '',
             senha:'',
         };
     
@@ -17,7 +17,7 @@ class Login extends Component {
       }
 
     handleChange(event) {
-        this.setState({email: event.target.value});
+        this.setState({nome: event.target.value});
     }
 
     handleChangePassword(event) {
@@ -25,18 +25,21 @@ class Login extends Component {
     }
     
     render() {
+        let logged = this.props.logged;
+        let islogged = this.props.islogged;
+        let cadastrar = this.props.cadastrar;
         return (
             <div className="Login-container">
                 <div className="Login-card">
                     <div className="Login-input">
                         <label>Email/Usuario:</label>
-                        <input className="input" type='text' value={this.state.email} name='email' onChange={this.handleChange} />
+                        <input className="input" type='text' value={this.state.nome} name='email' onChange={this.handleChange} />
                         <label>Senha:</label>
                         <input className="input" type='password' value={this.state.senha} name='senha' onChange={this.handleChangePassword} />
                     </div>
                     <div className="Login-btn">
-                        <Link to="/cadastrar" component={Cadastrar} className="Login-btn-cadastrar">Cadastrar</Link>
-                        <button className="Login-btn-entrar">Entrar</button>
+                        <button className="Login-btn-cadastrar" onClick={() => cadastrar()}>Cadastrar</button>
+                        <button disabled={!this.state.nome && !this.state.senha} className="Login-btn-entrar" onClick={() => islogged(1, this.state.nome)}>Entrar</button>
                     </div>
                 </div>
             </div>

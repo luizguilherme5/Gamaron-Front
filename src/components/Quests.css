@@ -8,6 +8,20 @@
     background-color: #f3f3f3;
 }
 
+.Modal-p{
+    color: #636363;
+    padding: 0 46px;
+    letter-spacing: 1px;
+}
+
+.Modal-objetivos{
+    color: rgb(94, 182, 76);
+}
+
+.Modal-objetivos-lista{
+    color: #636363;
+}
+
 .Modal-btn{
     padding: 4px 20px;
     border: 1px solid rgb(94, 182, 76);
