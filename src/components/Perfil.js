@@ -90,7 +90,7 @@ class Perfil extends Component {
                 <div className="Perfil-container-quest">
                     <h2 className="flashit">Temporada aberta!</h2>
                     <img className="Perfil-img-quest" src={ultimaquest} width={245} height={400} onClick={() => scene(2)}/>
-                    <img className="Perfil-img-item" src={ticket} width={245} height={245} />
+                    {this.state.moedas > 0 ? <img className="Perfil-img-item" src={ticket} width={245} height={245} /> : null}
                 </div>
             </div>
         );

@@ -46,8 +46,8 @@ class App extends Component {
     this.setState({ isLogged: false, scene: 5, moedas: 0, level: 0, nome: ''})
   }
 
-  handlePontos(value){
-    this.setState({pontos: this.state.pontos + value})
+  handlePontos(value, tkt){
+    this.setState({pontos: this.state.pontos + value, moedas: this.state.moedas + tkt})
   }
 
   afterLogin() {

@@ -33,7 +33,7 @@ class Quests extends Component {
 
     aceitar(value){
         let handlePontos = this.props.pontos
-        handlePontos(value)
+        handlePontos(value, 1)
         this.setState({renderPremio: true})
     }
 
