@@ -82,7 +82,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <div>
+          {this.state.scene == 7 ? null : <div>
             <div className='Header-container'>
               <div className='Header-left'>
                 <img className='Header-img' src={nome ? headerimg : null} width="100" height="100" />
@@ -104,7 +104,7 @@ class App extends Component {
             <div className="Header-sub">
               <h3 className="Header-title">Gamaron</h3>
             </div>
-          </div>
+          </div>}
           {this.state.isLogged == true ? this.afterLogin() : this.beforeLogin()}
           <Route path="/login" component={Login} />
           <Route path='/cadastrar' component={Cadastrar} />
