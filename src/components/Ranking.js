@@ -7,6 +7,7 @@ import throne from '../assets/throne.jpg';
 
 class Ranking extends Component {
     render() {
+        const { nome, pontos } = this.props
         return (
             <div className="Ranking-container">
                 <Sound
@@ -26,42 +27,42 @@ class Ranking extends Component {
                             <p className="position Ranking-txt">1º</p>
                             <p className="Ranking-txt">Karine Bruno</p>
                         </div>
-                        <p className="Ranking-txt">600 pts</p>
+                        <p className="Ranking-txt">700 pts</p>
                     </div>
                     <div className="Ranking-single-card">
                         <div className="fl">
                             <p className="position">2º</p>
-                            <p>Karine Bruno</p>
+                            <p>John Connor</p>
                         </div>
-                        <p>600 pts</p>
+                        <p>660 pts</p>
                     </div>
                     <div className="Ranking-single-card">
                         <div className="fl">
                             <p className="position">3º</p>
-                            <p>Karine Bruno</p>
+                            <p>{nome}</p>
                         </div>
-                        <p>600 pts</p>
+                        <p>{pontos} pts</p>
                     </div>
                     <div className="Ranking-single-card">
                         <div className="fl">
                             <p className="position">4º</p>
-                            <p>Karine Bruno</p>
+                            <p>Ingryd</p>
                         </div>
-                        <p>600 pts</p>
+                        <p>300 pts</p>
                     </div>
                     <div className="Ranking-single-card">
                         <div className="fl">
                             <p className="position">5º</p>
-                            <p>Karine Bruno</p>
+                            <p>Bruno</p>
                         </div>
-                        <p>600 pts</p>
+                        <p>280 pts</p>
                     </div>
                     <div className="Ranking-single-card">
                         <div className="fl">
                             <p className="position">6º</p>
-                            <p>Karine Bruno</p>
+                            <p>Ingryd Bruno</p>
                         </div>
-                        <p>600 pts</p>
+                        <p>200 pts</p>
                     </div>
                 </div>
             </div>

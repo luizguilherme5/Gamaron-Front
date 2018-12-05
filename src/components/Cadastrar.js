@@ -39,16 +39,8 @@ class Cadastrar extends Component {
         this.setState({tipo: event.target.value})
     }
 
-    AuthButton = withRouter(
-        ({ history }) => (
-            <button onClick={() => this.handleSubmit(history)} 
-            className="Login-btn-entrar">
-            Entrar￼
-            </button>
-        )
-    );
-
   render() {
+    let entrar = this.props.entrar;
     return (
       <div className="Login-container">        
         <div className="Login-card">
@@ -63,12 +55,12 @@ class Cadastrar extends Component {
                 <input className="input" type='password' value={this.state.senha} name='senha' onChange={this.handleChangePassword}/>
                 <label>Tipo de usuário:</label>
                 <select value={this.state.tipo} onChange={this.handleSelectChange}>
-                    <option value={0}>Professor</option>
-                    <option value={1}>Aluno</option>
+                    <option value={0}>Aluno</option>
+                    <option value={1}>Professor</option>
                 </select>
             </div>
             <div className="Login-btn">
-                <this.AuthButton />
+                <button disabled={!this.state.nome && !this.state.senha && !this.state.email} className="Login-btn-entrar" onClick={() => entrar(7, this.state.nome)}>Entrar</button>
             </div>
         </div>
       </div>

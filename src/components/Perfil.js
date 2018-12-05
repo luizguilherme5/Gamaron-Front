@@ -5,9 +5,24 @@ import Sound from 'react-sound';
 import perfil from '../assets/perfil.mp3';
 import fotodeperfil from '../assets/fotoperfil.jpg';
 import ultimaquest from '../assets/throne.jpg';
+import ticket from '../assets/ticket.png'
 
 class Perfil extends Component {
+    constructor(props){
+        super(props)
+        this.state = {
+            nome: this.props.nome,
+            level: this.props.level,
+            xp: 230,
+            moedas: this.props.moedas,
+            posicao: 3
+        }
+    }
+    
+    
     render() {
+        const { nome, level, xp, moedas, posicao } = this.state
+        let scene = this.props.scene
         return (
             <div className="Perfil-container">
                 <Sound
@@ -19,12 +34,12 @@ class Perfil extends Component {
                 />
                 
                 <div className="Perfil-container-info">
-                    <h2>Seu nome</h2>
+                    <h2>{nome}</h2>
                     <img className="Perfil-img" src={fotodeperfil} width={245} height={400}/>
-                    <p>Seu level</p>
-                    <p>Seu xp</p>
-                    <p>Suas moedas</p>
-                    <p>Sua posição no ranking</p>
+                    <p>Level: {level}</p>
+                    <p>Xp: {xp}</p>
+                    <p>Moedas: {moedas}</p>
+                    <p>Posição no ranking atual: {posicao}</p>
                 </div>
                 <div className="Perfil-timeline">
                     <Timeline lineColor={'#ddd'}>
@@ -73,8 +88,9 @@ class Perfil extends Component {
                     </Timeline>
                 </div>
                 <div className="Perfil-container-quest">
-                    <h2 className="flashit">Ultima Quests ou Em Aberto</h2>
-                    <img className="Perfil-img-quest" src={ultimaquest} width={245} height={400}/>
+                    <h2 className="flashit">Temporada aberta!</h2>
+                    <img className="Perfil-img-quest" src={ultimaquest} width={245} height={400} onClick={() => scene(2)}/>
+                    {this.state.moedas > 0 ? <img className="Perfil-img-item" src={ticket} width={245} height={245} /> : null}
                 </div>
             </div>
         );

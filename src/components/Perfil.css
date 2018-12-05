@@ -10,10 +10,17 @@
 
 .Perfil-img{
     border-radius: 10px;
+    border: 4px solid #000;
 }
 
 .Perfil-img-quest{
     border-radius: 10px;
+    border: 4px solid rgb(197, 178, 72);
+}
+
+.Perfil-img-item{
+    border-radius: 10px;
+    border: 4px solid #05aa4a;
 }
 
 .Perfil-container-quest{
