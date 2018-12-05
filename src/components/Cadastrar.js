@@ -60,7 +60,7 @@ class Cadastrar extends Component {
                 </select>
             </div>
             <div className="Login-btn">
-                <button disabled={!this.state.nome && !this.state.senha && !this.state.email} className="Login-btn-entrar" onClick={() => entrar(1, this.state.nome)}>Entrar</button>
+                <button disabled={!this.state.nome && !this.state.senha && !this.state.email} className="Login-btn-entrar" onClick={() => entrar(7, this.state.nome)}>Entrar</button>
             </div>
         </div>
       </div>

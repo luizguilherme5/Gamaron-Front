@@ -9,6 +9,7 @@ import Quests from './components/Quests';
 import Ranking from './components/Ranking';
 import Loja from './components/Loja';
 import Perfil from './components/Perfil';
+import History from './components/History';
 import headerimg from './assets/header-img.png';
 import unblogo from './assets/unbpixel';
 
@@ -62,6 +63,7 @@ class App extends Component {
         {this.state.scene == 2 ? <Ranking nome={this.state.nome} pontos={this.state.pontos}/> : null}
         {this.state.scene == 3 ? <Loja /> : null}
         {this.state.scene == 4 ? <Perfil nome={this.state.nome} level={this.state.level} moedas={this.state.moedas} scene={this.handleClick}/> : null}
+        {this.state.scene == 7 ? <History /> : null}
       </div>
     )
   }
@@ -93,7 +95,7 @@ class App extends Component {
                 </div>
               </div>
               <div>
-                <img className='Header-img-logo' src={unblogo} width="100" height="100" />
+                <img className='Header-img-logo' src={unblogo} width="100" height="100" onClick={() => this.handleClick(7)}/>
               </div>
               <div className='Header-right'>
                 <button className='Header-btn-sair' onClick={() => this.sair()}>sair</button>
